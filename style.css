@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: rgb(35, 41, 48); */
+  background-image: url("images/538968-final.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  background: #1b1b1b;
+}
+
+ul li {
+  display: block;
+  /* justify-content: center;
+  flex-direction: row; */
+  position: relative;
+}
+
+ul li a {
+  display: block;
+  padding: 20px 25px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+ul li ul.dropdown {
+  width: 100%;
+  background: #1b1b1b;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li a:hover {
+  background: #833f42;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+/* SEARCH BAR */
+
+.search {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+  border-color: black;
+}
+
+.search input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: none;
+  font-size: 17px;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+  border-radius: 5px;
+}
+
+#bullbasaur {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+
+  /* top: 50%;
+  left: 50%; */
+}
+
+#camera {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+
+  /* top: 50%;
+  left: 50%; */
+}
