@@ -3,51 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-
-    <title>Api oppgave</title>
+    <title>Pokémon Project</title>
     <link rel="icon" type="image/x-icon" href="/images/pokeball.ico" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <nav>
-        <ul>
-          <li>
-            <a href="#front"
-              ><img
-                id="bullbasaur"
-                src="./images/bullbasaur.png"
-                alt="bullbasaur"
-              />POKEMONS ▾</a
-            >
-            <ul class="dropdown">
-              <li><a href="#">TEMP</a></li>
-              <li><a href="#">TEMP</a></li>
-              <li><a href="#">TEMP</a></li>
-              <li><a href="#">TEMP</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="gallery.html#gallery-css"
-              ><img
-                id="camera"
-                src="./images/camera.png"
-                alt="camera"
-              />GALLERY</a
-            >
-          </li>
-          <li><a href="#">LIST</a></li>
-        </ul>
-      </nav>
-      <div class="search">
-        <form action="#">
-          <input
-            type="text"
-            placeholder="Search for a pokemon by name or id (1-150)"
-            name="search"
-          />
-        </form>
-      </div>
-    </main>
+    <nav>
+      <ul>
+        <li>
+          <a href="#index.html" id="home-button">
+            <img id="home" src="images/game.png" alt="home" />HOME
+          </a>
+        </li>
+        <li>
+          <a href="#" id="pokemon-button">
+            <img
+              id="bulbasaur"
+              src="images/bullbasaur.png"
+              alt="bulbasaur"
+            />GALLERY (NYI)
+          </a>
+          <ul class="dropdown"></ul>
+        </li>
+        <li>
+          <a href="#items" class="items-button">
+            <img id="camera" src="images/camera.png" alt="camera" />ITEMS
+            (RANDOM)
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="search">
+      <form>
+        <input
+          type="text"
+          name="search"
+          id="search-input"
+          placeholder="Search for a Pokémon by name or ID"
+        />
+      </form>
+    </div>
+    <div id="pokemon-data"></div>
+    <div id="item-data"></div>
+
+    <script src="script.js" defer></script>
   </body>
 </html>

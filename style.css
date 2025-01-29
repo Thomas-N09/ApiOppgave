@@ -5,11 +5,14 @@
 }
 
 body {
-  /* background-color: rgb(35, 41, 48); */
-  background-image: url("images/538968-final.png");
+  background-image: url("images/963319.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  min-height: 100svh;
+  max-width: 100%;
 }
+
+/* ***NAVBAR*** */
 
 ul {
   list-style: none;
@@ -51,16 +54,35 @@ ul li ul.dropdown {
 }
 
 ul li a:hover {
-  background: #833f42;
+  background: #a0a14e;
 }
 
 ul li:hover ul.dropdown {
   display: block;
 }
 
-/* SEARCH BAR */
+/* ***OTHER TAGS*** */
+
+p {
+  font-size: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+  width: 130px;
+  height: 130px;
+}
+
+/* ***SEARCH BAR*** */
 
 .search {
+  max-width: none;
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -70,6 +92,7 @@ ul li:hover ul.dropdown {
 }
 
 .search input[type="text"] {
+  width: 400px;
   padding: 8px;
   margin-right: 10px;
   border: none;
@@ -78,13 +101,18 @@ ul li:hover ul.dropdown {
   border-radius: 5px;
 }
 
-#bullbasaur {
+/* IDs */
+
+#home {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+#bulbasaur {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-
-  /* top: 50%;
-  left: 50%; */
 }
 
 #camera {
@@ -94,4 +122,45 @@ ul li:hover ul.dropdown {
 
   /* top: 50%;
   left: 50%; */
+}
+
+#pokemon-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  margin-top: 10em;
+  color: rgb(255, 255, 255);
+  background-color: rgb(39, 38, 36);
+  justify-content: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+#item-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  margin-top: 10em;
+  color: rgb(255, 255, 255);
+  background-color: rgb(39, 38, 36);
+  justify-content: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+#item-data h2 {
+  margin-bottom: 10px;
+}
+
+#item-data img {
+  max-width: 100%;
+  height: auto;
 }
